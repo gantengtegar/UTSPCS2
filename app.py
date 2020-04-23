@@ -19,8 +19,8 @@ ma = Marshmallow(app)
 class Mahasiswa(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     nim = db.Column(db.String(8), unique=True)
-    nama = db.Column(db.String(20))
-    alamat= db.Column(db.String(50))
+    nama = db.Column(db.String(30))
+    alamat= db.Column(db.String(200))
 
     def __init__(self, nim, nama, alamat):
         self.nim = nim
